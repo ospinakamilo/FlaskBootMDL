@@ -18,5 +18,5 @@ if __name__ == "__main__":
         start_webapp(mode=_DEBUG, config_dict=environments_config_dict)
     elif start_mode == _PRODUCTION:
         start_webapp(mode=_PRODUCTION, config_dict=environments_config_dict)
-    else:
-        start_webapp()
+    elif start_mode == _DEVELOPMENT:
+        start_webapp(mode=_DEVELOPMENT)

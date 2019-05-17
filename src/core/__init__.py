@@ -11,10 +11,8 @@ _HOST = "host"
 _PORT = "port"
 
 def start_webapp(mode:str=_DEVELOPMENT, config_dict:dict={}) -> None:
-    """Method that starts the flask app
-        e.g.
-            start_webapp(app=myApp, mode="DEBUG")
-    """
+    """Method that starts the flask app"""
+
     if mode == _DEVELOPMENT:
         os.environ["FLASK_ENV"] = _DEVELOPMENT
         app.run(host="127.0.0.1", port="8080", debug=True)
