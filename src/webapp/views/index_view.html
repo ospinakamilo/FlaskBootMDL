@@ -1,19 +1,37 @@
 {% extends "templates/layout.html" %}
-{% block title %}Index{% endblock %}
+
+{% block title %} Home {% endblock %}
+
+{% block navbar_title %} Home {% endblock %}
+
+{% block navbar_actions %}
+    <button id="navbar-actions"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+    </button>
+
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="navbar-actions">
+        <li class="mdl-menu__item">Some Action</li>
+        <li class="mdl-menu__item">Another Action</li>
+        <li disabled class="mdl-menu__item">Disabled Action</li>
+        <li class="mdl-menu__item">Yet Another Action</li>
+    </ul>
+{% endblock %}
+
 {% block content %}
-<div class="jumbotron">
-    <div class="container">
-    <h1 class="display-3">Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <button class="mdl-button mdl-js-button mdl-button--raised">
-            Grey Button
-    </button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-            Blue Button
-    </button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-            Green Button
-    </button>
+    <div class="jumbotron">
+        <div class="container">
+        <h1 class="display-3">Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <button class="mdl-button mdl-js-button mdl-button--raised">
+                Grey Button
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                Blue Button
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Green Button
+        </button>
+        </div>
     </div>
-</div>
 {% endblock %}

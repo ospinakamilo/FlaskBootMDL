@@ -22,15 +22,9 @@
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
+                    <div><h4>{% block navbar_title %}{% endblock %}</h4></div>
                     <div class="mdl-layout-spacer"></div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
-                            <i class="material-icons">search</i>
-                        </label>
-                        <div class="mdl-textfield__expandable-holder">
-                            <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
-                        </div>
-                    </div>
+                    {% block navbar_actions %}{% endblock %}
                 </div>
             </header>
             <div class="mdl-layout__drawer">
@@ -39,7 +33,6 @@
                     <a class="mdl-navigation__link" href="/">Home</a>
                     <a class="mdl-navigation__link" href="/contact">Contact</a>
                 </nav>
-                <div id="footer">{% block footer %}{% endblock %}</div>
             </div>
             <main class="mdl-layout__content">
                 <div class="page-content" style="padding: 10px">{% block content %}{% endblock %}</div>
