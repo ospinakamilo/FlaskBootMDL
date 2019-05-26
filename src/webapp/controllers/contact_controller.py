@@ -1,6 +1,5 @@
-from flask import render_template
-from src.core.web import app
+from src.core.web import app, render_view
 
 @app.route('/contact')
 def contact():
-    return render_template("contact_view.html")
+    return render_view("contact_view.html")

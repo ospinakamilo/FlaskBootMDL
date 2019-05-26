@@ -1,6 +1,5 @@
-from flask import render_template
-from src.core.web import app
+from src.core.web import app, render_view
 
 @app.route('/')
 def index():
-    return render_template("index_view.html")
+    return render_view("index_view.html")
