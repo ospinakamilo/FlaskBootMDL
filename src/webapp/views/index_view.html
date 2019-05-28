@@ -22,19 +22,34 @@
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-3">Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p>This is a flask webapp template. It comes with Bootstrap, Material Design Lite, Material Icons and JQuery preinstalled.</p>
 
-            <button class="mdl-button mdl-js-button mdl-button--raised">
-                    Grey Button
-            </button>
+            <div class="container-fluid">
 
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-                    Blue Button
-            </button>
-            
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                    Green Button
-            </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
+                    onclick="location.href='https://getbootstrap.com/'">
+                    Bootstrap
+                </button>
+
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                        onclick="location.href='https://getmdl.io/'">
+                        Material Design Lite
+                </button>
+
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                        style="color:darkcyan;"
+                        onclick="location.href='https://material.io/tools/icons/?style=baseline'">
+                        Material Icons
+                </button>
+
+
+                <button class="mdl-button mdl-js-button mdl-button--raised"
+                        style="color:dimgrey;"
+                        onclick="location.href='https://jquery.com/'">
+                        JQuery
+                </button>
+            </div>
+
         </div>
     </div>
 {% endblock %}
