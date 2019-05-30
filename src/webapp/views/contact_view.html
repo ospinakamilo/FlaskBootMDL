@@ -5,5 +5,32 @@
 {% block navbar_title %} Contact {% endblock %}
 
 {% block content %}
-    <h3>Contact Information</h3>
+<h3>Contact Information</h3>
+
+<p>Check the Color of the button when clicked (This is done using Brython and Jquery)</p>
+<button id="mybutton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> Click Here</button>
+
+<script type="text/python">
+    from browser import window, document
+
+    jq = window.jQuery
+
+    window.colors_index = 0
+
+    #Function that changes the color of the button
+    def change_button(event):
+        colors = ["darkcyan", "green", "purple", "black"]
+        next_color= colors[window.colors_index]
+        if window.colors_index < len(colors) -1 :
+            window.colors_index +=1
+        else:
+            window.colors_index = 0
+
+        jq('#mybutton').css("background-color", next_color)
+
+
+    #Bind blick Button to the function
+    document['mybutton'].bind('click', change_button)
+
+</script>
 {% endblock %}

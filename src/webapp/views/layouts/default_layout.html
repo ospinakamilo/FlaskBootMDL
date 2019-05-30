@@ -12,10 +12,11 @@
         <link rel="stylesheet" href="{{ url_for('vendor.static', filename='mdl-1.3.0/material.teal-blue.min.css') }}">
         <script src="{{ url_for('vendor.static', filename='jquery-3.4.1/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ url_for('vendor.static', filename='bootstrap-4.3.1/js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('vendor.static', filename='Brython-3.7.3/brython.js') }}"></script>
     {% endblock %}    
     </head>
 
-    <body>
+    <body onload="brython()">
        <!-- The drawer is always open in large screens. The header is always shown,
         even in small screens. -->        
 
