@@ -1,7 +1,7 @@
 # FlaskBootMDL
 A Flask project template that includes Bootsrap and Material Design Lite along other assets
 
-####Setup the project
+#### Setup the project
 This project uses **caos** as dependency manager so follow the instructions avaiable at https://github.com/ospinakamilo/caos
 to install it.
 
@@ -36,7 +36,7 @@ To start the project in a **Production** environment run:
 caos run production
 ~~~
 
-####Configure Ports and Addresses
+#### Configure Ports and Addresses
 By default development mode always uses **127.0.0.1:8080** as the main configuration but some further configuration is
 available for the **Debug** and **Production** modes under the file **config.py** located in the root of the project.
 
