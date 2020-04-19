@@ -1,8 +1,0 @@
-{
-    "require":{
-        "flask": "1.0.3"
-    },
-
-    "tests" : "./tests",
-    "main": "./main.py" 
-}

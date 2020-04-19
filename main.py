@@ -2,8 +2,7 @@
 
 import sys
 from config import environments_config_dict
-from src.webapp.controllers import *
-from src.core import (
+from core import (
     start_webapp,
     _DEBUG,
     _PRODUCTION,

@@ -1,4 +1,4 @@
-from src.core.web import app, render_view
+from core.web import app, render_view
 
 @app.route('/brython')
 def contact():

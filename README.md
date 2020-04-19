@@ -2,28 +2,33 @@
 A Flask project template that includes Bootsrap and Material Design Lite along other assets
 
 #### Setup the project
-This project uses **caos** as dependency manager so follow the instructions avaiable at https://github.com/ospinakamilo/caos
+This project uses **caos** as dependency manager so follow the instructions available at https://github.com/caotic-co/caos
 to install it.
+
+Install **caos** dependency manager:
+~~~
+$ pip install caos==2.0.3
+~~~
 
 Once you have installed **caos** you can proceed to clone the project
 ~~~
-git clone https://github.com/ospinakamilo/FlaskBootMDL.git
+$ git clone https://github.com/ospinakamilo/FlaskStartTemplate.git
 ~~~
 
 In the main folder of the project open a terminal and run the following command to create a virtual environment:
 ~~~
-caos prepare
+$ caos init
 ~~~
 
-Update the virtual environment dependencies with the content of the **caos.json** file:
+Update the virtual environment dependencies with the content of the **caos.yml** file:
 ~~~
-caos update
+$ caos update
 ~~~
 
 To start the project in **Development** mode you can use the following command:
 
 ~~~
-caos run
+$ caos run development
 ~~~
 
 To start the project in **Debug** mode use the following command:

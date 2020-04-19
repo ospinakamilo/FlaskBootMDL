@@ -1,0 +1,14 @@
+virtual_environment: "venv"
+
+dependencies:
+  flask: "^1.1.2"
+
+tasks:
+  development:
+    - "caos python ./main.py"
+
+  debug:
+    - "caos python ./main.py debug"
+
+  production:
+    - "caos python ./main.py production"
