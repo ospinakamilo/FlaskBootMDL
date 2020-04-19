@@ -21,10 +21,13 @@ def render_view(view_name, **context):
 
 """Main Flask app to be used in the project"""
 app = Flask(__name__,
-            static_folder=abspath("src/webapp/views/static"), 
-            template_folder=abspath("src/webapp/views"),            
+            static_folder=abspath("webapp/views/static"),
+            template_folder=abspath("webapp/views"),
 )
 
 """Register the Vendor Assets found in the core module"""
-vendor_blueprint = Blueprint('vendor', __name__, static_url_path='/static/vendor', static_folder=abspath("src/core/html/vendor"))
+vendor_blueprint = Blueprint('vendor', __name__, static_url_path='/static/vendor', static_folder=abspath("core/html/vendor"))
 app.register_blueprint(vendor_blueprint)
+
+"""Register the controllers found in webapp.controllers"""
+from webapp.controllers import *
